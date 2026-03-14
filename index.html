@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>🚀 SOLICITUD DE ALISTAMIENTO GALÁCTICO</h1>
+    <p style="text-align: center;">"La Libertad no se gana sola, se gana con artillería pesada."</p>
+
+    <form action="#">
+        
+        <fieldset>
+            <legend>DATOS DEL RECLUTA</legend>
+            <div class="pregunta">
+                <label for="nombre">Nombre y Rango Sugerido:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Carne de Cañón Pérez" required>
+            </div>
+            <div class="pregunta">
+                <label>¿A quién amas más?</label>
+                <input type="radio" id="mama" name="amor" value="mama"> <label style="display:inline;" for="mama">A mi mamá</label><br>
+                <input type="radio" id="democracia" name="amor" value="democracia" required> <label style="display:inline;" for="democracia">A la Democracia Gestionada</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>PSICOLOGÍA DE GUERRA</legend>
+            <div class="pregunta">
+                <label for="bicho">Ves a un Terminidio saludándote, ¿qué haces?</label>
+                <select id="bicho" name="reaccion">
+                    <option value="error">Le devuelvo el saludo (Traición)</option>
+                    <option value="bomba">Solicito una Bomba de 500kg</option>
+                    <option value="himno">Recito el himno mientras disparo</option>
+                </select>
+            </div>
+            <div class="pregunta">
+                <label>Nivel de tolerancia al fuego "amigo":</label>
+                <input type="range" min="1" max="10" value="5" name="tolerancia">
+                <div style="display: flex; justify-content: space-between; font-size: 0.7em;">
+                    <span>1 (Me quejo)</span>
+                    <span>10 (Es un honor morir así)</span>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>CONOCIMIENTO TÉCNICO</legend>
+            <div class="pregunta">
+                <label>¿Qué equipo de apoyo prefieres? (Selecciona varios)</label>
+                <input type="checkbox" id="mochila" name="equipo"> <label style="display:inline;" for="mochila">Mochila de Salto</label><br>
+                <input type="checkbox" id="cañon" name="equipo"> <label style="display:inline;" for="cañon">Cañón de Riel</label><br>
+                <input type="checkbox" id="lanzallamas" name="equipo"> <label style="display:inline;" for="lanzallamas">Lanzallamas (Amo el olor a bicho quemado)</label>
+            </div>
+            <div class="pregunta">
+                <label for="mensaje">Escribe tu última voluntad (Será ignorada):</label>
+                <textarea id="mensaje" rows="3" placeholder="Ej: Diganle a mi gato que..."></textarea>
+            </div>
+        </fieldset>
+
+<button type="submit">¡ENVIARME A LA LIBERTAD! 🫡</button>
+
+<p class="footer">Al hacer clic, usted acepta que la Supertierra no se hace responsable...</p>
+    </form>
+</body>
+</html>
